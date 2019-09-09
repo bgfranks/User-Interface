@@ -3,64 +3,311 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Mono", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+hr {
+  width: 95%;
 }
 
 /* Your code starts here! */
+
+/* Header */
+
+.header .nav {
+  display: inline-block;
+  position: fixed;
+}
+
+.header .nav nav a {
+  text-decoration: none;
+  color: gray;
+  margin: 20px;
+  border-bottom: none;
+  transition: 1s;
+}
+
+.header .nav nav a:hover {
+  background: lightgrey;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.header .nav nav a:first-child {
+  margin-left: 25px;
+}
+
+.header .nav a:last-child {
+  padding-right: 170px;
+}
+
+.header .logo-img {
+  display: inline-block;
+  padding: 20px 0 0 150px;
+  margin-left: 200px;
+}
+
+.header .logo-img img {
+  padding-top: 10px;
+}
+
+/* Header Content */
+
+.header .header-container {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.header .header-text {
+  padding-bottom: 15%;
+  margin: 0 0 10px 30px;
+}
+
+.header .header-text h1 {
+  font-size: 5rem;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.header .header-text .btn {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 3px 50px;
+  color: #000;
+  transition: 1s;
+  margin-top: 0;
+}
+
+.header .header-text .btn:hover {
+  border-color: lightgrey;
+  color: #f3f3f3;
+  background: #585858;
+}
+
+.header .header-img {
+  display: inline-block;
+  width: 45%;
+  padding-left: 50px;
+  margin-left: 100px;
+}
+
+/* Main Section */
+
+.main-section {
+  margin: 25px;
+}
+
+.main-section .features {
+  display: inline-block;
+  width: 47%;
+  margin: 25px 10px 30px 0;
+}
+
+.main-section .about {
+  display: inline-block;
+  width: 47%;
+  margin: 25px 0px 30px 10px;
+}
+
+/* Main section IMG */
+.main-section .main-img {
+  padding-bottom: 10px;
+}
+
+.main-section .main-img .middle-img {
+  width: 100%;
+}
+
+/* Main Section pt2 */
+
+.main-section .services {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 5px 20px 0;
+}
+
+.main-section .product {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 5px 20px 5px;
+}
+
+.main-section .vision {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 0 20px 5px;
+}
+
+/* Contact */
+
+.contact {
+  margin: 30px 0 0 25px;
+}
+
+.contact p {
+  padding-top: 10px;
+}
+
+/* Footer */
+
+footer {
+  margin: 50px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.85rem;
+}
